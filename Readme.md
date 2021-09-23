@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Оксана Медель](https://up.htmlacademy.ru/htmlcss/32/user/1793321).
-* Наставник: Анна Лисененкова.
+* Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena)
 
 ---
 
