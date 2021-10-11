@@ -1,12 +1,12 @@
 
 .welcome {
-  background: url("/images/background-title.jpg") no-repeat;
+  background: url("../images/background-title.jpg") no-repeat;
 }
 
 .newsletter {
-  background: url("/images/background-email.jpg") no-repeat;
+  background: url("../images/background-email.jpg") no-repeat;
 }
 
 .main-inner {
-  background: url("/images/background-catalog.jpg") no-repeat;
+  background: url("../images/background-catalog.jpg") no-repeat;
 }
