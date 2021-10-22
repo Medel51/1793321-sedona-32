@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
@@ -47,11 +47,11 @@
       </nav>
     </header>
 
-    <main class="main-index">
-      <div class="welcome">
-        <h1 class="visually-hidden">Седона</h1>
-        <img class="logo" src="images/welcome.svg" width="458" height="352" alt="Седона.">
-      </div>
+    <main class="main-container main-index">
+        <div class="page-container welcome">
+          <h1 class="visually-hidden">Седона</h1>
+          <img class="logo" src="images/welcome.svg" width="458" height="352" alt="Седона.">
+        </div>
 
       <section class="advantages">
         <h2 class="advantages-title">Седона - небольшой городок в Аризоне, <br>заслуживающий большего!</h2>
@@ -123,35 +123,37 @@
     </main>
 
     <footer class="page-footer">
-      <section class="footer-social">
-        <h2 class="visually-hidden">Соцсети</h2>
-        <ul class="footer-social-list">
-          <li class="footer-social-item">
-            <a class="button" href="https://twitter.com/htmlacademy_ru">
-              <span class="visually-hidden">Твиттер</span>
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="button" href="https://www.facebook.com/htmlacademy">
-              <span class="visually-hidden">Фейсбук</span>
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="button" href="https://www.youtube.com/c/HTMLAcademyRUS">
-              <span class="visually-hidden">Ютуб</span>
-            </a>
-          </li>
-        </ul>
-      </section>
+      <div class="page-footer-container">
+        <section class="footer-social">
+          <h2 class="visually-hidden">Соцсети</h2>
+          <ul class="footer-social-list">
+            <li class="footer-social-item">
+              <a class="button" href="https://twitter.com/htmlacademy_ru">
+                <span class="visually-hidden">Твиттер</span>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="button" href="https://www.facebook.com/htmlacademy">
+                <span class="visually-hidden">Фейсбук</span>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="button" href="https://www.youtube.com/c/HTMLAcademyRUS">
+                <span class="visually-hidden">Ютуб</span>
+              </a>
+            </li>
+          </ul>
+        </section>
 
-      <p class="footer-contacts">
-        <a class="footer-contacts-phone" href="tel:+78128121212">+7 812 812-12-12</a>
-      </p>
+        <p class="footer-contacts">
+          <a class="footer-contacts-phone" href="tel:+78128121212">+7 812 812-12-12</a>
+        </p>
 
-      <a class="button button-academy-logo" href=https://htmlacademy.ru>
-        <span class="visually-hidden">HTML Academy</span>
-        <img class="footer-web-logo" src="images/academy-logo.svg" width="115" height="34" alt="HTML Academy.">
-      </a>
+        <a class="button button-academy-logo" href=https://htmlacademy.ru>
+          <span class="visually-hidden">HTML Academy</span>
+          <img class="footer-web-logo" src="images/academy-logo.svg" width="115" height="34" alt="HTML Academy.">
+        </a>
+      </div>
     </footer>
 
   </body>
