@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<html lang="ru" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
@@ -9,16 +9,17 @@
   </head>
 
   <body>
+  <div class="container">
     <header class="page-header">
       <nav class="navigation">
         <ul class="navigation-list">
-          <li class="navigation-item">
+          <li class="navigation-left">
             <a class="navigation-link" href="index.html">Главная</a>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-left">
             <a class="navigation-link" href="about.html">О Седоне</a>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-left">
             <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
@@ -26,22 +27,22 @@
           <img class="page-header-logo" src="images/sedona-logo.svg" width="138" height="70" alt="Логотип Седона.">
         </a>
         <ul class="navigation-list navigation-user">
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
+          <li class="navigation-right">
+            <a class="navigation-icon navigation-search" href="#">
               <span class="visually-hidden">
                 Поиск
               </span>
             </a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
+          <li class="navigation-right">
+            <a class="navigation-icon navigation-favorite" href="#">
               <span class="visually-hidden">
                 Избранное
               </span>
             </a>
           </li>
           <li class="navigation-hotels">
-            <a class="button" href="#">Хочу сюда!</a>
+            <a class="navigation-icon button" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -155,6 +156,7 @@
         </a>
       </div>
     </footer>
+  </div>
 
   </body>
 </html>

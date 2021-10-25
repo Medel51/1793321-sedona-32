@@ -8,16 +8,17 @@
 
   </head>
   <body>
+  <div class="container">
     <header class="page-header">
       <nav class="navigation">
         <ul class="navigation-list">
-          <li class="navigation-item">
+          <li class="navigation-left">
             <a class="navigation-link" href="index.html">Главная</a>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-left">
             <a class="navigation-link" href="about.html">О Седоне</a>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-left">
             <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
@@ -25,22 +26,22 @@
           <img class="page-header-logo" src="images/sedona-logo.svg" width="138" height="70" alt="Логотип Седона.">
         </a>
         <ul class="navigation-list navigation-user">
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
+          <li class="navigation-right">
+            <a class="navigation-icon navigation-search" href="#">
               <span class="visually-hidden">
                 Поиск
               </span>
             </a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
+          <li class="navigation-right">
+            <a class="navigation-icon navigation-favorite" href="#">
               <span class="visually-hidden">
                 Избранное
               </span>
             </a>
           </li>
           <li class="navigation-hotels">
-            <a class="button" href="#">Хочу сюда!</a>
+            <a class="navigation-icon button" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -130,6 +131,7 @@
         </form>
       </div>
 
+      <div class="sorting-search">
         <p class="sorting-form">Найдено гостиниц: 38</p>
         <form class="sorting-type">
           <label class="visually-hidden" for="sorting">Сортировка</label>
@@ -149,7 +151,9 @@
         <a href="#" class="button button-light">
           <span class="visually-hidden">Показать список</span>
         </a>
+      </div>
 
+      <div class="hotel-catalog">
         <ul class="hotel-list">
           <li class="hotel-card">
             <a class="hotel-card-image-link" href="#"><img class="hotel-card-image" src="images/amara.jpg" width="180" height="120" alt="Amara Resort."></a>
@@ -214,6 +218,7 @@
             <a class="pagination-link" href="#">10</a>
           </li>
         </ul>
+      </div>
 
         <form class="number-hotels">
           <label class="number-form" for="number">Гостиниц на странице:</label>
@@ -270,6 +275,6 @@
         <img class="footer-web-logo" src="images/academy-logo.svg" width="115" height="34" alt="HTML Academy.">
       </a>
     </footer>
-
+  </div>
   </body>
 </html>

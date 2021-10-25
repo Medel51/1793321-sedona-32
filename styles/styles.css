@@ -25,15 +25,33 @@ body {
   min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
-  line-height: 21px;
+  line-height: 1.16;
   color: #000000;
   background-color: #ffffff;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
+header {
+  outline: 2px solid deeppink;
+  outline-offset: -2px;
+  margin: 0;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+main {
+  outline: 2px solid deepskyblue;
+  outline-offset: -2px;
 }
 
 .button {
   font-family: inherit;
   font-size: 16px;
-  line-height: 21px;
+  line-height: 1.31;
   font-weight: 700;
   text-align: center;
   color: #ffffff;
@@ -42,40 +60,71 @@ body {
   text-transform: uppercase;
 }
 
+/* Header */
+
 .page-header {
   color: #000000;
   background-color: #ffffff;
 }
 
 .page-header-logo {
-  display: block;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
 }
 
 .navigation {
   display: flex;
-  width: 1200px;
   margin: 0 auto;
 }
 
 .navigation-list {
-  width: 412px;
+  width: 531px;
   margin: 0;
-  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+
+  padding: 19px 0;
+  list-style:none;
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
 }
 
 .navigation-user {
-  max-width: 300px;
-  margin-left: auto;
+  width: 531px;
+  margin: 0;
+  justify-content: flex-end;
+}
+
+.navigation-left {
+  margin-right: 33px;
+  outline: 5px solid yellow;
+  outline-offset: -5px;
 }
 
 .navigation-link {
   font-family: inherit;
   font-size: 20px;
   font-weight: 700;
-  line-height: 26px;
+  line-height: 1.3;
   color: inherit;
   text-decoration: none;
+
+  outline: 5px solid green;
+  outline-offset: -5px;
 }
+
+.navigation-icon {
+  margin-left: 21px;
+  fill: currentColor;
+  outline: 5px solid green;
+  outline-offset: -5px;
+}
+
+/* Main */
 
 .main-container {
   flex-grow: 1;
@@ -94,7 +143,7 @@ body {
 .advantages-title {
   font-size: 30px;
   font-weight: 700;
-  line-height: 36px;
+  line-height: 1.2;
   text-transform: uppercase;
   text-align: center;
 }
@@ -107,8 +156,8 @@ body {
 
 .advantages-list {
   display: flex;
-  justify-content: space-between;
-  padding: 0 40px;
+  flex-wrap: wrap;
+  padding: 0;
 }
 
 .advantages-item {
@@ -117,14 +166,14 @@ body {
 
 .advantages-reasons {
   font-size: 22px;
-  line-height: 36px;
+  line-height: 1.63;
   text-align: center;
 }
 
 .advantages-title {
   font-size: 24px;
   font-weight: 700;
-  line-height: 28px;
+  line-height: 1.16;
   text-transform: uppercase;
   text-align: center;
 }
@@ -133,24 +182,29 @@ body {
   text-align: center;
 }
 
-.dealform-title, .newsletter-title {
+/* Dealform */
+
+.dealform-title {
   font-size: 30px;
   font-weight: 700;
-  line-height: 36px;
+  line-height: 1.2;
   text-transform: uppercase;
   text-align: center;
+  padding-top: 91px;
 }
 
-.dealform-text, .newsletter-text {
+.dealform-text {
   font-size: 22px;
-  line-height: 26px;
+  line-height: 1.18;
   text-align: center;
 }
 
 .dealform .button {
   font-size: 20px;
-  line-height: 36px;
+  line-height: 1.8;
 }
+
+/* Newsletter */
 
 .newsletter {
   min-height: 650px;
@@ -159,9 +213,24 @@ body {
   background-size: 100%;
 }
 
+.newsletter-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 94px;
+}
+
+.newsletter-text {
+  font-size: 22px;
+  line-height: 1.18;
+  text-align: center;
+}
+
 .newsletter .button {
   font-size: 20px;
-  line-height: 26px;
+  line-height: 1.3;
   background-color: #83B3D3;
 }
 
@@ -169,45 +238,27 @@ body {
   line-height: 26px;
 }
 
-.page-footer-container {
-  display: flex;
-  width: 1200px;
-  margin: 0 auto;
-}
+/* Catalog */
 
-.footer-social {
-  width: 120px;
-  margin-right: 48px;
-}
-
-.footer-social-item .button {
-  color: #000000;
-  background-color: #ffffff;
-}
-
-.footer-contacts-phone {
-  font-size: 40px;
-  line-height: 40px;
-  color: #000000;
-  text-decoration: none;
-  text-align: center;
-}
-
-.button-academy-logo {
-  margin-left: auto;
-  width: 120px;
-  background-color: #ffffff
-}
 .main-inner {
   background: url("../images/background-catalog.jpg") no-repeat;
-  background-size: 110%;
   color: #ffffff;
+}
+
+.inner-header {
+  outline: 4px solid deeppink;
+  outline-offset: -2px;
+}
+
+.sorting-search {
+  outline: 4px solid green;
+  outline-offset: -2px;
 }
 
 .inner-header-title {
   font-size: 60px;
   font-weight: 700;
-  line-height: 78px;
+  line-height: 1.3;
 }
 
 .breadcrumbs-link {
@@ -215,27 +266,35 @@ body {
   text-decoration: none;
 }
 
+.catalog-filter-group {
+  display: inline-block;
+}
+
 .catalog-filter-title {
   font-size: 20px;
   font-weight: 700;
-  line-height: 26px;
+  line-height: 1.3;
+}
+
+.catalog-filter-list {
+  list-style-type: none;
 }
 
 .catalog-filter-label {
   font-size: 18px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1.33;
 }
 
 .control-label {
   font-size: 18px;
-  line-height: 23px;
+  line-height: 1.27;
 }
 
 .sorting-form {
   font-size: 30px;
   font-weight: 700;
-  line-height: 39px;
+  line-height: 1.3;
   color: #000000;
 }
 
@@ -246,7 +305,7 @@ body {
 .button-none {
   font-size: 18px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1.33;
   text-transform: capitalize;
   background: none;
 }
@@ -255,10 +314,15 @@ body {
   line-height: 24px;
 }
 
+.hotel-catalog {
+  outline: 4px solid red;
+  outline-offset: -2px;
+}
+
 .hotel-card-title-link {
   font-size: 24px;
   font-weight: 700;
-  line-height: 31px;
+  line-height: 1.29;
   color: inherit;
   text-decoration: none;
 }
@@ -266,7 +330,7 @@ body {
 .hotel-card-type, .hotel-price {
   font-size: 18px;
   font-weight: 400;
-  line-height: 23px;
+  line-height: 1.27;
   color: #000000;
 }
 
@@ -276,3 +340,70 @@ body {
   color: #000000;
   text-transform: uppercase;
 }
+
+.number-hotels {
+  outline: 4px solid deeppink;
+  outline-offset: -2px;
+}
+
+/* Footer */
+
+footer {
+  outline: 2px solid limegreen;
+  outline-offset: -2px;
+}
+
+.page-footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.footer-social {
+  width: 120px;
+  margin-right: 48px;
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
+}
+
+.footer-social-list {
+  width: 240px;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footer-social-item .button {
+  color: #000000;
+  background-color: #ffffff;
+  outline: 5px solid yellow;
+  outline-offset: -5px;
+}
+
+.footer-contacts-phone {
+  width: 720px;
+  margin-left: 61px;
+  margin-right: 61px;
+  font-size: 40px;
+  line-height: 1;
+  color: #000000;
+  text-decoration: none;
+  text-align: center;
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
+}
+
+.button-academy-logo {
+  margin-left: auto;
+  width: 120px;
+  height: 34px;
+  background-color: #ffffff;
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
+}
+
+
